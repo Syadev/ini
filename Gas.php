@@ -7,7 +7,7 @@ $colors = new Colors();
 echo "---------- [".$colors->getColoredString("SYADEV TOOLS", "green")."] ----------".PHP_EOL.PHP_EOL;
 
 inputRefferal:
-$codeReff = input("[ ".date('H:i:s')." ] -> ".$colors->getColoredString("Kode Refferal  ", "green"));
+$codeReff = input("[ ".date('H:i:s')." ] -> ".$colors->getColoredString("Code  ", "green"));
 if(empty($codeReff)) {
     goto inputRefferal;
 } else {
@@ -15,7 +15,7 @@ if(empty($codeReff)) {
 }
 
 totalReff:
-$totalReff = input("[ ".date('H:i:s')." ] -> ".$colors->getColoredString("Jumlah Refferal", "green"));
+$totalReff = input("[ ".date('H:i:s')." ] -> ".$colors->getColoredString("How Many ? ", "green"));
 if(empty($totalReff)) {
     goto inputRefferal;
 } else {
@@ -23,7 +23,7 @@ if(empty($totalReff)) {
 }
 
 for ($ia=1; $ia <= $totalReff; $ia++) {
-    echo "-------------------- ".$colors->getColoredString("REFFERAL KE $ia", "green")." ----------------------".PHP_EOL;
+    echo "--------------------".$colors->getColoredString("Reload Amunisi", "green")." ----------------------".PHP_EOL;
     tryRegister:
     /* RANDOM EMAIL DLL */
     $nama = get_between(nama(), '{"name":"', '",');
